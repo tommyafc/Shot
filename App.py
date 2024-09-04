@@ -47,9 +47,12 @@ ospite= (df.loc[sq2,'Sh p90'] + df.loc[sq1,'ShA p90']) / 2
 if sq1 == sq2:
     st.write("")
 else:
-    st.write('Tiri',sq1,':', casa)
-    st.write('Tiri',sq2,':', ospite)
-    st.write('Tiri Totali:', casa+ospite)
+    with st.columns(3)[1]:
+    with st.form(key='columns_in_form'):
+        st.write('Tiri',sq1,':', casa)
+        st.write('Tiri',sq2,':', ospite)
+        st.write('Tiri Totali:', casa+ospite)
+    
 
 
 
