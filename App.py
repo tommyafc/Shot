@@ -48,7 +48,6 @@ if sq1 == sq2:
     st.write("")
 else:
     with st.columns(3)[1]:
-        with st.form(key='columns_in_form'):
         st.write('Tiri',sq1,':', casa)
         st.write('Tiri',sq2,':', ospite)
         st.write('Tiri Totali:', casa+ospite)
