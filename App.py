@@ -36,21 +36,7 @@ fbref_file2 = glob.glob('s2.csv')[0]
 fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=';',encoding='unicode_escape')
 df2=fbref_dif
 
-df['Sh p90'] = df['Sh'] / df['90s']
-df['ShA p90'] = df2['Sh'] / df2['90s']
-
-df=df.set_index('Squad')
-casa= (df.loc[sq1,'Sh p90'] + df.loc[sq2,'ShA p90']) / 2
-ospite= (df.loc[sq2,'Sh p90'] + df.loc[sq1,'ShA p90']) / 2
-
-
-if sq1 == sq2:
-    st.write("")
-else:
-    st.write('Tiri',sq1,':', casa)
-    st.write('Tiri',sq2,':', ospite)
-    st.write('Tiri Totali:', casa+ospite)
-
+st.write(df)
 
 
 
