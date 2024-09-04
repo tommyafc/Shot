@@ -13,11 +13,10 @@ st.write('Use it well. 🤗')
 
 st.image("https://i.postimg.cc/L8KqkdFC/Shot-Serie-A.png")
 
-with st.columns(3)[1]:
-    with st.form(key='columns_in_form'):
-     sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
-     sq2 = st.selectbox("Team 2:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
-     submitted = st.form_submit_button('Submit')
+with st.form(key='columns_in_form'):
+ sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
+ sq2 = st.selectbox("Team 2:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
+ submitted = st.form_submit_button('Submit')
 
 
 #url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
