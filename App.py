@@ -20,25 +20,6 @@ with st.columns(3)[1]:
      submitted = st.form_submit_button('Submit')
 
 
-#url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
-#response = requests.get(url).text.replace('<!--', '').replace('-->', '')
-#df = pd.read_html(response, header=1)[8]
-
-fbref_file2 = glob.glob('s1.csv')[0]
-fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=';',encoding='unicode_escape')
-df=fbref_dif
-
-#url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
-#esponse = requests.get(url).text.replace('<!--', '').replace('-->', '')
-#df2 = pd.read_html(response, header=1)[9]
-
-fbref_file2 = glob.glob('s2.csv')[0]
-fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=';',encoding='unicode_escape')
-df2=fbref_dif
-
-st.write(df)
-
-
 
 #streamlit run /Users/tommy14/Desktop/FDS/Onesto_analyst/App.py
 
