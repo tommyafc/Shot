@@ -26,7 +26,7 @@ with st.columns(3)[1]:
 
 fbref_file2 = glob.glob('s1.csv')[0]
 fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=';',encoding='unicode_escape')
-df=fbref_dif.set_index('Player')
+df=fbref_dif
 
 #url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
 #esponse = requests.get(url).text.replace('<!--', '').replace('-->', '')
@@ -34,7 +34,7 @@ df=fbref_dif.set_index('Player')
 
 fbref_file2 = glob.glob('s2.csv')[0]
 fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=';',encoding='unicode_escape')
-df2=fbref_dif.set_index('Player')
+df2=fbref_dif
 
 df['Sh p90'] = df['Sh'] / df['90s']
 df['ShA p90'] = df2['Sh'] / df2['90s']
