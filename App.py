@@ -12,36 +12,6 @@ st.write('Use it well. 🤗')
 
 st.image("https://i.postimg.cc/L8KqkdFC/Shot-Serie-A.png")
 
-with st.columns(3)[1]:
-    with st.form(key='columns_in_form'):
-     sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
-     sq2 = st.selectbox("Team 2:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
-     submitted = st.form_submit_button('Submit')
-
-
-url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
-response = requests.get(url).text.replace('<!--', '').replace('-->', '')
-df = pd.read_html(response, header=1)[8]
-
-url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
-response = requests.get(url).text.replace('<!--', '').replace('-->', '')
-df2 = pd.read_html(response, header=1)[9]
-
-df['Sh p90'] = df['Sh'] / df['90s']
-df['ShA p90'] = df2['Sh'] / df2['90s']
-
-df=df.set_index('Squad')
-casa= (df.loc[sq1,'Sh p90'] + df.loc[sq2,'ShA p90']) / 2
-ospite= (df.loc[sq2,'Sh p90'] + df.loc[sq1,'ShA p90']) / 2
-
-
-if sq1 == sq2:
-    st.write("")
-else:
-    st.write('Tiri',sq1,':', casa)
-    st.write('Tiri',sq2,':', ospite)
-    st.write('Tiri Totali:', casa+ospite)
-
 
 
 
