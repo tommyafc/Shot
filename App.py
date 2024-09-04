@@ -25,8 +25,8 @@ with st.form(key='columns_in_form'):
 #response = requests.get(url).text.replace('<!--', '').replace('-->', '')
 #df = pd.read_html(response, header=1)[8]
 
-fbref_file2 = glob.glob('s1.csv')[0]
-fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=',',encoding='unicode_escape')
+fbref_file = glob.glob('s1.csv')[0]
+fbref_dif = pd.read_csv(fbref_file, index_col=None, header=0, sep=',',encoding='unicode_escape')
 df=fbref_dif
 
 #url= 'https://fbref.com/en/comps/11/2024-2025/2024-2025-Serie-A-Stats'
@@ -34,8 +34,8 @@ df=fbref_dif
 #df2 = pd.read_html(response, header=1)[9]
 
 fbref_file2 = glob.glob('s2.csv')[0]
-fbref_dif = pd.read_csv(fbref_file2, index_col=None, header=0, sep=',',encoding='unicode_escape')
-df2=fbref_dif
+fbref_dif2 = pd.read_csv(fbref_file2, index_col=None, header=0, sep=',',encoding='unicode_escape')
+df2=fbref_dif2
 
 df['Sh p90'] = df['Sh'] / df['90s']
 df['ShA p90'] = df2['Sh'] / df2['90s']
