@@ -1,23 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import cm, colors
-import seaborn as sns
-import csv
-import glob
-from adjustText import adjust_text
-from matplotlib.cm import ScalarMappable
-from sklearn import preprocessing
-from sklearn.cluster import KMeans
-from sklearn.mixture import GaussianMixture
-from sklearn.metrics import adjusted_rand_score, silhouette_score
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.decomposition import PCA
-from yellowbrick.cluster import KElbowVisualizer, SilhouetteVisualizer
-from mplsoccer import PyPizza, Radar
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-from sklearn.linear_model import LinearRegression
 import requests
 
 st.set_page_config(page_title='Onesto Analyst')
