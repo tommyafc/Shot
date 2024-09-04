@@ -3,6 +3,17 @@ import pandas as pd
 import numpy as np
 import csv
 import glob
+import matplotlib.pyplot as plt
+from matplotlib import cm, colors
+import seaborn as sns
+import csv
+import glob
+from adjustText import adjust_text
+from matplotlib.cm import ScalarMappable
+from sklearn import preprocessing
+from sklearn.cluster import KMeans
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+
 
 st.set_page_config(page_title='Onesto Analyst')
 
