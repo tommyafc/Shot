@@ -11,7 +11,7 @@ st.write('I have published my first webapp that calculates the number of expecte
 st.write('This tool can be used to identify favourable odds and potentially gain an advantage over bookmakers.')
 st.write('Use it well. 🤗')
 
-st.image("https://i.postimg.cc/L8KqkdFC/Shot-Serie-A.png")
+st.image("https://i.postimg.cc/KjyT4Wbw/Shot-Serie-A.png")
 
 with st.form(key='columns_in_form'):
  sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
