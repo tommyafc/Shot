@@ -13,6 +13,8 @@ st.write('Use it well. 🤗')
 
 st.image("https://i.postimg.cc/KjyT4Wbw/Shot-Serie-A.png")
 
+st.write('Update: 05.09.2024')
+
 with st.form(key='columns_in_form'):
  sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
  sq2 = st.selectbox("Team 2:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
