@@ -6,14 +6,16 @@ import glob
 
 st.set_page_config(page_title='Onesto Analyst')
 
-st.title("ONESTO ANALYST")
-st.write('I have published my first webapp that calculates the number of expected shots per game for each team, based on data from previous league games.')
-st.write('This tool can be used to identify favourable odds and potentially gain an advantage over bookmakers.')
-st.write('Use it well. 🤗')
+st.title("Serie A - Average Shot Predict")
+st.header("@omesto_analyst")
+#st.write('I have published my first webapp that calculates the number of expected shots per game for each team, based on data from previous league games.')
+#st.write('This tool can be used to identify favourable odds and potentially gain an advantage over bookmakers.')
+#st.write('Use it well. 🤗')
 
-st.image("https://i.postimg.cc/KjyT4Wbw/Shot-Serie-A.png")
+#st.image("https://i.postimg.cc/KjyT4Wbw/Shot-Serie-A.png")
 
 st.write('Update: 05.09.2024')
+st.write('Data: WhoScored')
 
 with st.form(key='columns_in_form'):
  sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
