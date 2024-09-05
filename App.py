@@ -45,6 +45,9 @@ df=df.set_index('Squad')
 casa= (df.loc[sq1,'Sh p90'] + df.loc[sq2,'ShA p90']) / 2
 ospite= (df.loc[sq2,'Sh p90'] + df.loc[sq1,'ShA p90']) / 2
 
+casa = round(casa, 2)
+ospite = round(ospite, 2)
+
 
 if sq1 == sq2:
     st.write("")
