@@ -53,9 +53,9 @@ if sq1 == sq2:
     st.write("")
 else:
     with st.columns(3)[1]:
-        st.write('Tiri',sq1,':', casa)
-        st.write('Tiri',sq2,':', ospite)
-        st.write('Tiri Totali:', casa+ospite)
+        st.write(sq1,'Shots:', casa)
+        st.write(sq2,'Shots:', ospite)
+        st.write('Total Shots:', casa+ospite)
     
 
 
