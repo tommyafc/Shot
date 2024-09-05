@@ -12,7 +12,7 @@ st.markdown("@onesto_analyst")
 #st.write('This tool can be used to identify favourable odds and potentially gain an advantage over bookmakers.')
 #st.write('Use it well. 🤗')
 
-#st.image("https://i.postimg.cc/KjyT4Wbw/Shot-Serie-A.png")
+#st.image("Juventus.png")
 
 with st.form(key='columns_in_form'):
  sq1 = st.selectbox("Team 1:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
