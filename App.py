@@ -4,11 +4,10 @@ import numpy as np
 import csv
 import glob
 
-st.set_page_config(page_title='Onesto Analyst')
+st.set_page_config(page_title='Average Shot Predictor')
 
 st.title("Serie A - Average Shot Predictor")
 st.markdown("@onesto_analyst")
-st.markdown("________________________________________________________________")
 #st.write('I have published my first webapp that calculates the number of expected shots per game for each team, based on data from previous league games.')
 #st.write('This tool can be used to identify favourable odds and potentially gain an advantage over bookmakers.')
 #st.write('Use it well. 🤗')
