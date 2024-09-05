@@ -7,7 +7,7 @@ import glob
 st.set_page_config(page_title='Onesto Analyst')
 
 st.title("Serie A - Average Shot Predict")
-st.header("@omesto_analyst")
+st.markdown("@omesto_analyst")
 #st.write('I have published my first webapp that calculates the number of expected shots per game for each team, based on data from previous league games.')
 #st.write('This tool can be used to identify favourable odds and potentially gain an advantage over bookmakers.')
 #st.write('Use it well. 🤗')
