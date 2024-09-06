@@ -57,6 +57,24 @@ else:
         st.write('Total Shots:', casa+ospite)
 
 
+with st.form(key='columns_in_form'):
+ h1 = st.selectbox("Home:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
+ a2 = st.selectbox("Away:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
+ submitted = st.form_submit_button('Submit')
+ st.write('Update: 05.09.2024 - Data: WhoScored')
+
+fbref_file22 = glob.glob('s_HA.csv')[0]
+fbref_difa = pd.read_csv(fbref_file22, index_col=None, header=0, sep=',',encoding='unicode_escape')
+dfha=fbref_difa
+
+dhaf=dfha.set_index('Squad')
+casa2= (dfha.loc[h1,'Sh HOME'] + dfha.loc[a2,'Sh AWAY A']) / 2
+ospite2= (dfha.loc[a2,'Sh AWAY'] + dfha.loc[h1,'Sh HOME A']) / 2
+
+print(h1,':', casa2, 'Tiri')
+print(a2,':', ospite2, 'Tiri')
+print('Tiri Totali:', casa2+ospite2)
+
 
 
 #streamlit run /Users/tommy14/Desktop/FDS/Onesto_analyst/App.py
