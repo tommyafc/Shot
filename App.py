@@ -67,7 +67,7 @@ fbref_file22 = glob.glob('s_HA.csv')[0]
 fbref_difa = pd.read_csv(fbref_file22, index_col=None, header=0, sep=',',encoding='unicode_escape')
 dfha=fbref_difa
 
-dhaf=dfha.set_index('Squad')
+dfha=dfha.set_index('Squad')
 casa2= (dfha.loc[h1,'Sh HOME'] + dfha.loc[a2,'Sh AWAY A']) / 2
 ospite2= (dfha.loc[a2,'Sh AWAY'] + dfha.loc[h1,'Sh HOME A']) / 2
 
