@@ -57,7 +57,7 @@ else:
         st.write('Total Shots:', casa+ospite)
 
 
-with st.form(key='columns_in_form'):
+with st.form(key='columns_in_forma'):
  h1 = st.selectbox("Home:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
  a2 = st.selectbox("Away:",("Atalanta", "Bologna", "Cagliari","Como","Empoli","Fiorentina","Genoa","Hellas Verona","Inter","Juventus","Lazio","Lecce","Milan","Monza","Napoli","Parma","Roma","Torino","Udinese","Venezia"),)
  submitted = st.form_submit_button('Submit')
