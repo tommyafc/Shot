@@ -75,6 +75,14 @@ print(h1,':', casa2, 'Tiri')
 print(a2,':', ospite2, 'Tiri')
 print('Tiri Totali:', casa2+ospite2)
 
+if h1 == a2:
+    st.write("")
+else:
+    with st.columns(3)[1]:
+        st.write(h1,'Shots:', casa2)
+        st.write(a2,'Shots:', ospite2)
+        st.write('Total Shots:', casa2+ospite2)
+
 
 
 #streamlit run /Users/tommy14/Desktop/FDS/Onesto_analyst/App.py
